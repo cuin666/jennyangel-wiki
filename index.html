@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0f0f11; /* Sleek dark background */
+            background-color: #0f0f11;
             color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -53,10 +53,15 @@
             max-height: 45px;
             max-width: 90%;
             object-fit: contain;
-            /* If the image fails to load, this text will show instead */
-            color: #fff; 
+            color: #fff;
             font-size: 20px;
             font-weight: bold;
+        }
+        .brand-text {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -69,12 +74,14 @@
     <div class="link-container">
         <!-- Stripchat Affiliate Link -->
         <a href="https://go.whitetrafsa.com/?path=/badangelsjennyx&sound=off&action=sbSignupWithModel&userId=a162ddc0acae5d0a82bae3f13445e810636b1293539fab10cbe9e17836b3b3ec" class="link-card" target="_blank" rel="noopener noreferrer">
-            <img src="stripchat-logo.png" alt="Stripchat">
+            <img src="stripchat-logo.png" alt="Stripchat" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="brand-text" style="display:none;">STRIPCHAT</span>
         </a>
 
-        <!-- My.Club Link -->
-        <a href="#" class="link-card" target="_blank" rel="noopener noreferrer">
-            <img src="myclub-logo.png" alt="My.Club">
+        <!-- My.Club Direct Link -->
+        <a href="https://jennyangel.club" class="link-card" target="_blank" rel="noopener noreferrer">
+            <img src="myclub-logo.png" alt="My.Club" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="brand-text" style="display:none;">MY.CLUB</span>
         </a>
     </div>
 
